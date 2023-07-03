@@ -1,0 +1,240 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Markanda Vastra</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+
+				<!-- Six -->
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Our Catalog</h2>
+						<ul class="actions stacked">
+							<li><a href="home.html" class="button big wide smooth-scroll-middle" style="float: right;">Home</a></li>
+							<li><a href="guidelines.html" class="button big wide smooth-scroll-middle" style="float: right;">Guidelines</a></li>
+						</ul>
+						
+						<style>
+							input {
+								border-radius: 24px;
+								border: 1px solid #dfe1e5;
+								background: #fff;  
+								padding: 20px;
+								display: flex;
+								z-index: 3;
+								width: 638px;
+							height: 44px;
+							margin: 20px;
+						}
+							input:hover{
+								box-shadow: 0 0 8px 1px #e1e1e1;
+							}
+						</style>
+						<!-- <form  id="searchform"> -->
+						<input name="search" type="text" placeholder="Search" id = "target"
+						autocomplete="on" autofocus onkeypress="handleKeyPress(event)">
+					<!-- </form> -->
+						
+						<script>
+							function handleKeyPress(event) {
+							  if (event.keyCode === 13) {
+								event.preventDefault(); // Prevent form submission
+								search();
+							  }	
+							}
+							
+							function search() {
+								var searchInput = document.getElementById("target");
+								var searchTerm = searchInput.value.toLowerCase();
+								
+								var results = data.filter(function(item) {
+								return item.toLowerCase().includes(searchTerm);
+								});
+								
+								var searchResults = document.getElementById("searchResults");
+								searchResults.innerHTML = "";
+								
+								if (results.length > 0) {
+								results.forEach(function(result) {
+									var resultLink = document.createElement("a");
+									resultLink.href = "catalog.html?search=" + result; // Set the destination URL here
+									resultLink.textContent = result;
+									searchResults.appendChild(resultLink);
+									searchResults.appendChild(document.createElement("br"));
+								});
+								} else {
+								var noResults = document.createElement("p");
+								noResults.textContent = "No results found.";
+								searchResults.appendChild(noResults);
+								}
+							}
+							</script>
+
+
+							<p>This is the current selection we have, please consult the <a href='guidelines.html'>general guidelines</a> for more 
+								information on questions related to ordering from us.</p>
+							<div class="items style1 medium onscroll-fade-in">
+							
+								<article>
+								<a href="images/gallery/fulls/02.jpg" class="image">
+									<img src="images/gallery/thumbs/02.jpg" alt="" />
+								</a>
+								<div class="caption">
+									<h3>Feugiat Lorem</h3>
+									<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
+									<ul class="actions fixed" style="float: center;">
+										<li><span class="button small">Details</span></li>
+									</ul>
+								</div>
+							</article>
+								
+							<section>
+									<span class="icon solid style2 major fa-save"></span>
+									<h3>Ipsum</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-chart-bar"></span>
+									<h3>Dolor</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-wifi"></span>
+									<h3>Amet</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-cog"></span>
+									<h3>Magna</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon style2 major fa-paper-plane" id='Tempus'></span>
+									<h3>Tempus</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-desktop"></span>
+									<h3>Aliquam</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-sync-alt"></span>
+									<h3>Elit</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-hashtag"></span>
+									<h3>Morbi</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-bolt"></span>
+									<h3>Turpis</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-envelope"></span>
+									<h3>Ultrices</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+								<section>
+									<span class="icon solid style2 major fa-leaf"></span>
+									<h3>Risus</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
+								</section>
+							</div>
+						</div>
+					</section>
+
+
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="guidelines">
+						<div class="content">
+							<h2>About Us</h2>
+								<p>
+									The name Markanda is synonymous with purity and honesty, and <script></script>arees have always been a symbol of tradition, elegance and dignity.<br><br>
+									With <i>Markanda</i>, we connect you to the roots of Indian weaving heritage,
+									the richness of which manifests itself the through the dexterity and expertise of our master weavers. They create sarees 5 
+									meters long that could be folded to fit into a match box.
+									We have embarked on this journey with the intention of supporting and encouraging the weavers to continue with their hereditary profession 
+									and earn a decent livelihood.<br><br>
+							 
+									It is Markanda Vastra’s endeavor to provide this amazing experience by rediscovering the rich tradition integrating with contemporary designs.
+									We take immense pride in our efforts, dedication and commitment to ensure customer delight and exceed expectations by the unique amalgamation 
+									of our rich heritage with modernity.
+								</p>
+							<!-- <ul class="actions stacked">
+							</ul> -->
+						</div>
+						<div class="image">
+							<img src="images/spotlight01.jpg" alt="" />
+						</div>
+					</section>
+
+				<!-- Seven -->
+					<!-- <section class="wrapper style1 align-center">
+						<div class="inner medium">
+							<h2>Get in touch</h2>
+							<form method="post" action="#">
+								<div class="fields">
+									<div class="field half">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" value="" />
+									</div>
+									<div class="field half">
+										<label for="email">Email</label>
+										<input type="email" name="email" id="email" value="" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="6"></textarea>
+									</div>
+								</div>
+								<ul class="actions special">
+									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+
+						</div>
+					</section> -->
+
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-whatsapp"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon solid style2 fa-phone"><span class="label">LinkedIn</span></a></li>
+								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li> <!--add mailto-->
+							</ul>
+							<p>&copy; Markanda Vastra. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
